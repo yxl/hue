@@ -10,4 +10,4 @@ COPY conf /opt/hue/desktop/conf
 COPY startup.sh /opt/hue
 
 EXPOSE 8888
-CMD ["./startup.sh"]
+CMD ["/opt/hue/startup.sh"]
