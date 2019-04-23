@@ -28,7 +28,7 @@
   from notebook.conf import ENABLE_NOTEBOOK_2, ENABLE_QUERY_ANALYSIS, ENABLE_QUERY_SCHEDULING
 %>
 
-<%namespace name="impalaDocIndex" file="/impala_doc_index.mako" />
+<%namespace name="sqlDocIndex" file="/sql_doc_index.mako" />
 
 (function () {
   window.AUTOCOMPLETE_TIMEOUT = ${ conf.EDITOR_AUTOCOMPLETE_TIMEOUT.get() };
@@ -383,5 +383,5 @@
       'timestamp': -1, 'tinyint': -1, 'varchar': -1 }
   };
 
-  ${ impalaDocIndex.impalaDocIndex() }
+  ${ sqlDocIndex.sqlDocIndex() }
 })();
